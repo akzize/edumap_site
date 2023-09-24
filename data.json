@@ -1,179 +1,351 @@
 {
-    "Etablissement de Formation": [
-      {
-        "Filière": "Employé d'Etages",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Zagora": [
-      {
-        "Filière": "Opérateur en Valorisation des Dattes",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Tiznit": [
-      {
-        "Filière": "Plomberie Sanitaire",
-        "Niveau de Formation": "Spécialisation"
-      },
-      {
-        "Filière": "Ouvrier Spécialisé en Coupe et Couture",
-        "Niveau de Formation": "Spécialisation"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Tinghir": [
-      {
-        "Filière": "Menuiserie Aluminium",
-        "Niveau de Formation": "Spécialisation"
-      },
-      {
-        "Filière": "Plomberie Sanitaire",
-        "Niveau de Formation": "Spécialisation"
-      },
-      {
-        "Filière": "Technicien en Construction Métallique",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Tata": [
-      {
-        "Filière": "Ouvrier Qualifié en Espaces Verts",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Ouvrier Qualifié en Coupe et Couture",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Agent de Restauration",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Tafraout": [
-      {
-        "Filière": "Electricité d'Installation",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Réparateur de Véhicules Automobiles",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Agent de Restauration",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Taddart Anza": [
-      {
-        "Filière": "Ouvrier Polyvalent en Construction Métallique",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Mécanicien Général Polyvalent",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Ouvrier Qualifié en Coupe et Couture",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Ouarzazate": [
-      {
-        "Filière": "Plomberie Sanitaire",
-        "Niveau de Formation": "Spécialisation"
-      },
-      {
-        "Filière": "Peintre Vitrier",
-        "Niveau de Formation": "Spécialisation"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Inezgane": [
-      {
-        "Filière": "Ouvrier Spécialisé en Coupe et Couture",
-        "Niveau de Formation": "Spécialisation"
-      }
-    ],
-    "Institut Spécialisé de Technologie Appliquée Agadir": [
-      {
-        "Filière": "Technicien en Construction Métallique",
-        "Niveau de Formation": "Technicien"
-      }
-    ],
-    "Institut Spécialisé de l’Hôtellerie et de La Restauration Agadir": [
-      {
-        "Filière": "Ouvrier Qualifié en Espaces Verts",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Employé d'Etages",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Institut de Technologie Appliquée Hay El Farah Agadir": [
-      {
-        "Filière": "Coupe Cuir",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Montage Chaussure",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Institut de Technologie Appliquée Agadir": [
-      {
-        "Filière": "Ouvrier Qualifié en Espaces Verts",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Ouvrier Polyvalent en Construction Métallique",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Soudeur International Multi-Procédés",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Réparateur des Equipements Electroménagers",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Carrosserie Peinture Automobile",
-        "Niveau de Formation": "Qualification"
-      },
-      {
-        "Filière": "Plomberie Sanitaire",
-        "Niveau de Formation": "Spécialisation"
-      },
-      {
-        "Filière": "Technicien en Fabrication Mécanique",
-        "Niveau de Formation": "Technicien"
-      },
-      {
-        "Filière": "Monteur Régleur en Plasturgie",
-        "Niveau de Formation": "Technicien"
-      }
-    ],
-    "Centre Mixte de Formation Professionnelle Agadir": [
-      {
-        "Filière": "Ouvrier Qualifié en Bijouterie",
-        "Niveau de Formation": "Qualification"
-      }
-    ],
-    "Centre de Qualification Professionnelle Taroudant": [
-      {
-        "Filière": "Plomberie Sanitaire",
-        "Niveau de Formation": "Spécialisation"
-      }
-    ],
-    "Centre de Formation des Métiers du Cinéma Ouarzazate": [
-      {
-        "Filière": "Technicien en Costume et Habillage pour le Cinéma et le Spectacle",
-        "Niveau de Formation": "Technicien"
-      },
-      {
-        "Filière": "Technicien en Coiffure et Maquillage pour le Cinéma",
-        "Niveau de Formation": "Technicien"
-      }
-    ]
-  }
-  
+  "schools": [
+    {
+      "name": "L'Office de Formation Professionnelle et de Promotion du Travail (OFPPT) Ouarzazate",
+      "date_created": "2000",
+      "description": "L'Office  de Formation Professionnelle et de Promotion du Travail (OFPPT) de Ouarzazate est un établissement public d'enseignement et de formation professionnelle. Il propose une large gamme de filières de formation, notamment dans les domaines de l'électricité, de la mécanique....",
+      "filieres": [
+        {
+          "name": "Electricité",
+          "number_teachers": 10,
+          "number_students": 150,
+          "number_classes": 15
+        },
+        {
+          "name": "Mécanique",
+          "number_teachers": 8,
+          "number_students": 100,
+          "number_classes": 8
+        },
+        {
+          "name": "Informatique",
+          "number_teachers": 12,
+          "number_students": 140,
+          "number_classes": 11
+        },
+        {
+          "name": "Plomberie",
+          "number_teachers": 10,
+          "number_students": 100,
+          "number_classes": 10
+        },
+        {
+          "name": "Froid et Climatisation",
+          "number_teachers": 5,
+          "number_students": 40,
+          "number_classes": 3
+        },
+        {
+          "name": "Menuiserie",
+          "number_teachers": 10,
+          "number_students": 100,
+          "number_classes": 10
+        },
+        {
+          "name": "Couture et Broderie",
+          "number_teachers": 10,
+          "number_students": 90,
+          "number_classes": 4
+        },
+        {
+          "name": "Esthétique et Coiffure",
+          "number_teachers": 4,
+          "number_students": 110,
+          "number_classes": 3
+        },
+        {
+          "name": "Tourisme et Hôtellerie",
+          "number_teachers": 10,
+          "number_students": 140,
+          "number_classes": 10
+        },
+        {
+          "name": "Développement d'applications web et mobiles",
+          "number_teachers": 5,
+          "number_students": 120,
+          "number_classes": 10
+        },
+        {
+          "name": "Management des systèmes d'information",
+          "number_teachers": 10,
+          "number_students": 100,
+          "number_classes": 10
+        },
+        {
+          "name": "Réseau et télécommunications",
+          "number_teachers": 10,
+          "number_students": 110,
+          "number_classes": 6
+        }
+      ],
+      "address": "Rue Ennaceur B.P.43 45000 Ouarzazate",
+      "phone": "+212 524885786",
+      "facebook_page": "https://www.facebook.com/101234395013597/posts/199935231810179/"
+    },
+  	{
+      "name": "L'Office de Formation Professionnelle et de Promotion du Travail (OFPPT) Errachidia",
+      "date_created": "2000",
+      "description": "L'Office  de Formation Professionnelle et de Promotion du Travail (OFPPT) de Errachidia est un établissement public d'enseignement et de formation professionnelle. Il propose une large gamme de filières de formation, notamment dans les domaines de l'électricité, de la mécanique....",
+      "filieres": [
+        {
+          "name": "Electricité",
+          "number_teachers": 5,
+          "number_students": 120,
+          "number_classes": 10
+        },
+        {
+          "name": "Mécanique",
+          "number_teachers": 10,
+          "number_students": 80,
+          "number_classes": 8
+        },
+        {
+          "name": "Informatique",
+          "number_teachers": 6,
+          "number_students": 140,
+          "number_classes": 5
+        },
+        {
+          "name": "Plomberie",
+          "number_teachers": 10,
+          "number_students": 100,
+          "number_classes": 3
+        },
+        {
+          "name": "Froid et Climatisation",
+          "number_teachers": 5,
+          "number_students": 104,
+          "number_classes": 4
+        },
+        {
+          "name": "Tourisme et Hôtellerie",
+          "number_teachers": 4,
+          "number_students": 100,
+          "number_classes": 5
+        },
+        {
+         "name": "Gestion et Comptabilité",
+          "number_teachers": 6,
+          "number_students": 210,
+          "number_classes": 7
+        },
+        {
+          "name": "Transport et Logistique",
+          "number_teachers": 3,
+          "number_students": 25,
+          "number_classes": 1
+        },
+        {
+          "name": "Agriculture et Agroalimentaire",
+          "number_teachers": 5,
+          "number_students": 40,
+          "number_classes": 4
+        },
+        {
+          "name": "Développement d'applications web et mobiles",
+          "number_teachers": 7,
+          "number_students": 140,
+          "number_classes": 5
+        },
+        {
+          "name": "Management des systèmes d'information",
+          "number_teachers": 4,
+          "number_students": 100,
+          "number_classes": 3
+        },
+        {
+          "name": "Réseau et télécommunications",
+          "number_teachers": 14,
+          "number_students": 120,
+          "number_classes": 30
+        }
+      ],
+      "address": "Avenue Hassan II, Errachidia, Morocco",
+      "phone": "+212 524 77 11 11",
+      "facebook_page": "https://www.facebook.com/people/OFPPT-Errachidia/100054370608155/"
+    },
+	{
+      "name": "L'Office de Formation Professionnelle et de Promotion du Travail (OFPPT) Zagora",
+      "date_created": "2001",
+      "description": "L'Office  de Formation Professionnelle et de Promotion du Travail (OFPPT) de Zagora est un établissement public d'enseignement et de formation professionnelle. Il propose une large gamme de filières de formation, notamment dans les domaines de l'électricité, de la mécanique....",
+      "filieres": [
+        {
+          "name": "Electricité",
+          "number_teachers": 5,
+          "number_students": 110,
+          "number_classes": 6
+        },
+        {
+          "name": "Mécanique",
+          "number_teachers": 5,
+          "number_students": 170,
+          "number_classes": 6
+        },
+        {
+          "name": "Informatique",
+          "number_teachers": 9,
+          "number_students": 250,
+          "number_classes": 6
+        },
+        {
+          "name": "Plomberie",
+          "number_teachers": 4,
+          "number_students": 120,
+          "number_classes": 6
+        },
+        {
+          "name": "Froid et Climatisation",
+          "number_teachers": 3,
+          "number_students": 104,
+          "number_classes": 4
+        },
+        {
+          "name": "Menuiserie",
+          "number_teachers": 8,
+          "number_students": 150,
+          "number_classes": 4
+        },
+        {
+          "name": "Couture et Broderie",
+          "number_teachers": 5,
+          "number_students": 100,
+          "number_classes": 2
+        },
+        {
+          "name": "Esthétique et Coiffure",
+          "number_teachers": 5,
+          "number_students": 180,
+          "number_classes": 4
+        },
+        {
+          "name": "Tourisme et Hôtellerie",
+          "number_teachers": 2,
+          "number_students": 24,
+          "number_classes": 2
+        },
+        {
+          "name": "Gestion et Comptabilité",
+          "number_teachers": 6,
+          "number_students": 150,
+          "number_classes": 4
+        },
+        {
+          "name": "Transport et Logistique",
+          "number_teachers": 2,
+          "number_students": 100,
+          "number_classes": 2
+        },
+        {
+          "name": "Agriculture et Agroalimentaire",
+          "number_teachers": 7,
+          "number_students": 200,
+          "number_classes": 6
+        }
+      ],
+      "address": "Avenue Mohammed V, Zagora, Morocco",
+      "phone": "+212 524 88 11 11",
+      "facebook_page": "https://www.facebook.com/ISTAZagora"
+    },
+    {
+      "name": "L'Office de Formation Professionnelle et de Promotion du Travail (OFPPT) Tinghir",
+      "date_created": "2001",
+       "description": "L'Office  de Formation Professionnelle et de Promotion du Travail (OFPPT) de Tinghir est un établissement public d'enseignement et de formation professionnelle. Il propose une large gamme de filières de formation, notamment dans les domaines de l'électricité, de la mécanique....",
+      "filieres": [
+        {
+          "name": "Electricité",
+          "number_teachers": 5,
+          "number_students": 110,
+          "number_classes": 6
+        },
+        {
+          "name": "Mécanique",
+          "number_teachers": 5,
+          "number_students": 170,
+          "number_classes": 6
+        },
+        {
+          "name": "Informatique",
+          "number_teachers": 9,
+          "number_students": 250,
+          "number_classes": 6
+        },
+        {
+          "name": "Plomberie",
+          "number_teachers": 10,
+          "number_students": 100,
+          "number_classes": 3
+        },
+        {
+          "name": "Froid et Climatisation",
+          "number_teachers": 5,
+          "number_students": 104,
+          "number_classes": 4
+        },
+        {
+          "name": "Menuiserie",
+          "number_teachers": 7,
+          "number_students": 105,
+          "number_classes": 5
+        },
+        {
+          "name": "Couture et Broderie",
+          "number_teachers": 10,
+          "number_students": 200,
+          "number_classes": 8
+        },
+        {
+          "name": "Esthétique et Coiffure",
+          "number_teachers": 6,
+          "number_students": 102,
+          "number_classes": 4
+        },
+        {
+          "name": "Tourisme et Hôtellerie",
+          "number_teachers": 2,
+          "number_students": 24,
+          "number_classes": 2
+        },
+        {
+          "name": "Gestion et Comptabilité",
+          "number_teachers": 6,
+          "number_students": 150,
+          "number_classes": 4
+        },
+        {
+          "name": "Transport et Logistique",
+          "number_teachers": 2,
+          "number_students": 100,
+          "number_classes": 2
+        },
+         {
+          "name": "Agriculture et Agroalimentaire",
+          "number_teachers": 5,
+          "number_students": 40,
+          "number_classes": 4
+        },
+        {
+          "name": "Développement d'applications web et mobiles",
+          "number_teachers": 7,
+          "number_students": 140,
+          "number_classes": 5
+        },
+        {
+          "name": "Management des systèmes d'information",
+          "number_teachers": 4,
+          "number_students": 100,
+          "number_classes": 3
+        },
+        {
+          "name": "Réseau et télécommunications",
+          "number_teachers": 14,
+          "number_students": 120,
+          "number_classes": 30
+        }
+      ],
+      "address": "Avenue Hassan II, Errachidia, Morocco",
+      "phone": "+212 524 77 11 11",
+      "facebook_page": "https://www.facebook.com/istatinghir/"
+    }
+  ]
+}
+    
