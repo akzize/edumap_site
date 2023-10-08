@@ -1,307 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/styles/modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/css.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="images/logo3.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edu Map</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <style>
-        .c1 {
-            padding: 0;
-            margin: 0;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  </head>
 
-<body>
-    <div class="cont d-flex justify-content-between align-items-center">
-        <img class="logo logo-left" src="images/logo3.svg" alt="">
-        <div id="wrap" class="">
-            <form action="" autocomplete="on">
-                <input id="destinationInput" name="search" type="text" placeholder="Entrez la ville">
-                <input id="search_submit" value="Rechercher" type="submit">
-            </form>
-        </div>
-    </div>
-    <div class="justify-content-between align-items-center">
-        <marquee behavior="alternate" direction="down" width="100%" height="60">
-            <h4 class="c1 text-center">Trouvez l'établissement le plus proche de vous</h4>
-        </marquee>
-    </div>
-    <br>
-    <div class="container-fluid section-gray" style="overflow-y: scroll; overflow-x: hidden;">
-        <div class="row">
-            <div class="col-sm-6 col-md-7">
-                <div class="cards-6">
-                    <div class="container">
-                        <div class="row" data-aos="fade-up">
-                            <div class="col-md-6">
-                                <div class="card-1 card card-profile">
-                                    <div class="card-image">
-
-                                        <img class="img" src="images/room1.jpg">
-                                        <div class="ftr">
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-twitter">
-                                                <i class="fa-brands fa-facebook" style="color: #fff;"></i>
-                                            </a>
-                                            <a href="tel:/" class="svgbtn btn btn-just-icon btn-simple btn-dribbble">
-                                                <i class="fa-brands fa-whatsapp" style="color: #fff;"></i></a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-instagram">
-                                                <i class="fa-brands fa-instagram" style="color: #fff;"></i></a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-instagram">
-                                                <i class="fa-brands fa-youtube" style="color: #fff;"></i></a>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="table">
-                                        <h6 class="category text-info">ISTA Ouarzazate</h6>
-                                        
-                                        <div class="d-flex flex-row gap-4 justify-content-center" id="counter">
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <i class="fa-solid fa-user text-secondary fs-5"></i>
-                                                <div class="counter text-center  fw-bold  text-secondary"
-                                                    data-target="1000">0</div>
-                                            </div>
-
-                                            <div class="">
-                                                <i class="fa-solid fa-building-user text-secondary fs-5"></i>
-                                                <div class="counter text-center  fw-bold text-secondary"
-                                                    data-target="1500">0</div>
-                                            </div>
-
-                                            <div class="">
-                                                <i class="fa-solid fa-book-open-reader text-secondary fs-5"></i>
-                                                <div class="counter text-center fw-bold text-secondary"
-                                                    data-target="2000">0</div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="audio-player" style="display: none;">
-                                            <audio controls class="preview-audio">
-                                                <source src="" type="audio/mp3">
-                                                Votre navigateur ne supporte pas l'élément audio.
-                                            </audio>
-                                        </div> -->
-
-                                        <a href="#" data-audio="audio2.mp3"
-                                            onclick="showLocationAndAudio('ISTA Ouarzazate', this.getAttribute('data-audio'));">
-                                            <div class="btnaper card-caption"> Aperçu</div>
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-1 card card-profile">
-                                    <div class="card-image">
-
-                                        <img class="img" src="images/room2.jpg">
-                                        <div class="ftr">
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-twitter">
-                                                <i class="fa-brands fa-facebook" style="color: #fff;"></i>
-                                            </a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-dribbble">
-                                                <i class="fa-brands fa-whatsapp" style="color: #fff;"></i></a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-instagram">
-                                                <i class="fa-brands fa-instagram" style="color: #fff;"></i></a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-instagram">
-                                                <i class="fa-brands fa-youtube" style="color: #fff;"></i></a>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="table">
-                                        <h6 class="category text-info">ISMC Ouarzazate</h6>
-                                       
-                                        <div class="d-flex flex-row gap-4 justify-content-center" id="counter">
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <i class="fa-solid fa-user text-secondary fs-5"></i>
-                                                <div class="counter text-center  fw-bold  text-secondary"
-                                                    data-target="1000">0</div>
-                                            </div>
-
-                                            <div class="">
-                                                <i class="fa-solid fa-building-user text-secondary fs-5"></i>
-                                                <div class="counter text-center  fw-bold text-secondary"
-                                                    data-target="1500">0</div>
-                                            </div>
-
-                                            <div class="">
-                                                <i class="fa-solid fa-book-open-reader text-secondary fs-5"></i>
-                                                <div class="counter text-center fw-bold text-secondary"
-                                                    data-target="2000">0</div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="audio-player" style="display: none;">
-                                            <audio controls class="preview-audio">
-                                                <source src="" type="audio/mp3">
-                                                Votre navigateur ne supporte pas l'élément audio.
-                                            </audio>
-                                        </div> -->
-
-                                        <a href="#" data-audio="audio1.mp3"
-                                            onclick="showLocationAndAudio('ISMC Ouarzazate', this.getAttribute('data-audio'));">
-                                            <div class="btnaper card-caption"> Aperçu</div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-1 card card-profile">
-                                    <div class="card-image">
-
-                                        <img class="img" src="images/room12.jpg">
-                                        <div class="ftr">
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-twitter">
-                                                <i class="fa-brands fa-facebook" style="color: #fff;"></i>
-                                            </a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-dribbble">
-                                                <i class="fa-brands fa-whatsapp" style="color: #fff;"></i></a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-instagram">
-                                                <i class="fa-brands fa-instagram" style="color: #fff;"></i></a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-instagram">
-                                                <i class="fa-brands fa-youtube" style="color: #fff;"></i></a>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="table">
-                                        <h6 class="category text-info">ISTA Zagoura</h6>
-                                        <!-- <p class="card-description text-secondary">CQP Zagoura : Centre de
-                                            Qualification Professionnelle
-                                            Adresse : Rue Ennaceur B.P.43 45000 Zagoura
-                                            Numéro de Téléphone : 0524885786</p> -->
-                                        <div class="d-flex flex-row gap-4 justify-content-center" id="counter">
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <i class="fa-solid fa-user text-secondary fs-5"></i>
-                                                <div class="counter text-center  fw-bold  text-secondary"
-                                                    data-target="1000">0</div>
-                                            </div>
-
-                                            <div class="">
-                                                <i class="fa-solid fa-building-user text-secondary fs-5"></i>
-                                                <div class="counter text-center  fw-bold text-secondary"
-                                                    data-target="1500">0</div>
-                                            </div>
-
-                                            <div class="">
-                                                <i class="fa-solid fa-book-open-reader text-secondary fs-5"></i>
-                                                <div class="counter text-center fw-bold text-secondary"
-                                                    data-target="2000">0</div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="audio-player" style="display: none;">
-                                            <audio controls class="preview-audio">
-                                                <source src="" type="audio/mp3">
-                                                Votre navigateur ne supporte pas l'élément audio.
-                                            </audio>
-                                        </div> -->
-
-                                        <a href="#" data-audio="audio2.mp3"
-                                            onclick="showLocationAndAudio('ISTA Zagoura', this.getAttribute('data-audio'));">
-                                            <div class="btnaper card-caption"> Aperçu</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-1 card card-profile">
-                                    <div class="card-image">
-
-                                        <img class="img" src="images/room1.jpg">
-                                        <div class="ftr">
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-twitter">
-                                                <i class="fa-brands fa-facebook" style="color: #fff;"></i>
-                                            </a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-dribbble">
-                                                <i class="fa-brands fa-whatsapp" style="color: #fff;"></i></a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-instagram">
-                                                <i class="fa-brands fa-instagram" style="color: #fff;"></i></a>
-                                            <a href="#" class="svgbtn btn btn-just-icon btn-simple btn-instagram">
-                                                <i class="fa-brands fa-youtube" style="color: #fff;"></i></a>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="table">
-                                        <h6 class="category text-info">ISTA Agadir</h6>
-                                        <!-- <p class="card-description text-secondary">CQP Agadir : Centre de
-                                            Qualification Professionnelle
-                                            Adresse : Rue Ennaceur B.P.43 45000 Agadir
-                                            Numéro de Téléphone : 0524885786</p> -->
-                                        <div class="d-flex flex-row gap-4 justify-content-center" id="counter">
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <i class="fa-solid fa-user text-secondary fs-5"></i>
-                                                <div class="counter text-center  fw-bold  text-secondary"
-                                                    data-target="1000">0</div>
-                                            </div>
-
-                                            <div class="">
-                                                <i class="fa-solid fa-building-user text-secondary fs-5"></i>
-                                                <div class="counter text-center  fw-bold text-secondary"
-                                                    data-target="1500">0</div>
-                                            </div>
-
-                                            <div class="">
-                                                <i class="fa-solid fa-book-open-reader text-secondary fs-5"></i>
-                                                <div class="counter text-center fw-bold text-secondary"
-                                                    data-target="2000">0</div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="audio-player" style="display: none;">
-                                            <audio controls class="preview-audio">
-                                                <source src="" type="audio/mp3">
-                                                Votre navigateur ne supporte pas l'élément audio.
-                                            </audio>
-                                        </div> -->
-
-                                        <a href="#" data-audio="audio1.mp3"
-                                            onclick="showLocationAndAudio('ISTA Agadir', this.getAttribute('data-audio'));">
-                                            <div class="btnaper card-caption"> Aperçu</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <body>
+    <header>
+      <img class="logo logo-left" src="./images/logo3.svg" alt="" />
+      <div id="wrap" class="">
+        <form action="" autocomplete="on">
+          <input
+            id="destinationInput"
+            name="search"
+            type="text"
+            placeholder="Entrez la ville"
+          />
+          <input id="search_submit" value="Rechercher" type="submit" />
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="card-container">
+        <div class="blog-slider" onclick="localiser('ISTA Ouarzazate')">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/room1.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="blog-slider__title">ISTA Ouarzazate</div>
+                <div class="blog-slider__text">
+                  CQP Ouarzazate : Centre de Qualification Professionnelle
+                  Adresse : Rue Ennaceur B.P.43 45000 Ouarzazate Numéro de
+                  Téléphone : 0524885786
                 </div>
+                <div class="row">
+                  <div class="col-6">
+                    <button
+                      type="button"
+                      class="blog-slider__button"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      onclick="lireVideo(12)"
+                    >
+                      Voir la video
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button
+                      class="niveaubutton"
+                      data-toggle="modal"
+                      data-target="#my-modal"
+                    >
+                      Filières par Niveau
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/room12.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="blog-slider__title">Statistiques des Filières</div>
+                <div class="blog-slider__text">
+                  <div id="chart_div"></div>
+                </div>
+              </div>
+            </div>
 
-            </div>
-            <div class="col-sm-5 col-md-5" style="overflow-y: hidden;" data-aos="fade-left">
-                <iframe id="mapFrame" src="https://maps.google.com/maps?q=ISTA ISMC ouazazate&output=embed" width="100%"
-                    height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
         </div>
+
+        <!-- debut de la card2 -->
+
+        <div class="blog-slider" onclick="localiser('ISMC Ouarzazate')">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/room1.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="blog-slider__title">ISMC Ouarzazate</div>
+                <div class="blog-slider__text">
+                  CQP Ouarzazate : Centre de Qualification Professionnelle
+                  Adresse : Rue Ennaceur B.P.43 45000 Ouarzazate Numéro de
+                  Téléphone : 0524885786
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <button
+                      type="button"
+                      class="blog-slider__button"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      onclick="lireVideo(12)"
+                    >
+                      Voir la video
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button
+                      class="niveaubutton"
+                      data-toggle="modal"
+                      data-target="#my-modal"
+                    >
+                      Filières par Niveau
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/room12.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="blog-slider__title">Statistiques des Filières</div>
+                <div class="blog-slider__text">
+                  <div id="chart_div"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-slider__pagination"></div>
+          </div>
+        </div>
+        <!-- debut de la card3 -->
+        <div class="blog-slider" onclick="localiser('ISTA Zagoura')">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/room1.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="blog-slider__title">ISTA Zagoura</div>
+                <div class="blog-slider__text">
+                  CQP Ouarzazate : Centre de Qualification Professionnelle
+                  Adresse : Rue Ennaceur B.P.43 45000 Ouarzazate Numéro de
+                  Téléphone : 0524885786
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <button
+                      type="button"
+                      class="blog-slider__button"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      onclick="lireVideo(12)"
+                    >
+                      Voir la video
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button
+                      class="niveaubutton"
+                      data-toggle="modal"
+                      data-target="#my-modal"
+                    >
+                      Filières par Niveau
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/room12.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="blog-slider__title">Statistiques des Filières</div>
+                <div class="blog-slider__text">
+                  <div id="chart_div"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-slider__pagination"></div>
+          </div>
+        </div>
+        <div class="blog-slider" onclick="localiser('ISTA Agadir')">
+          <div class="blog-slider__wrp swiper-wrapper">
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/room1.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="blog-slider__title">ISTA Agadir</div>
+                <div class="blog-slider__text">
+                  CQP Ouarzazate : Centre de Qualification Professionnelle
+                  Adresse : Rue Ennaceur B.P.43 45000 Ouarzazate Numéro de
+                  Téléphone : 0524885786
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <button
+                      type="button"
+                      class="blog-slider__button"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      onclick="lireVideo(12)"
+                    >
+                      Voir la video
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button
+                      class="niveaubutton"
+                      data-toggle="modal"
+                      data-target="#my-modal"
+                    >
+                      Filières par Niveau
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="./images/room12.jpg" alt="" />
+              </div>
+              <div class="blog-slider__content">
+                <div class="blog-slider__title">Statistiques des Filières</div>
+                <div class="blog-slider__text">
+                  <div id="chart_div"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-slider__pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          id="mapFrame"
+          src="https://maps.google.com/maps?q=ISTA ISMC ouazazate&output=embed"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+    ></script>
+    <script src="js/js.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
+
+      var swiper = new Swiper(".blog-slider", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        mousewheel: {
+          invert: false,
+        },
+        pagination: {
+          el: ".blog-slider__pagination",
+          clickable: true,
+        },
+      });
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Topping");
+        data.addColumn("number", "Slices");
+        data.addRows([
+          ["مستوى التخصص", 550],
+          ["مستوى التأهيل ", 450],
+          ["مستوى التقني", 350],
+          ["مستوى التقني المتخصص", 650],
+        ]);
+        var options = {
+          width: 400,
+          height: 300,
+        };
+        var chart = new google.visualization.PieChart(
+          document.getElementById("chart_div")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Modele  -->
+
+    <div class="container">
+      <div
+        id="my-modal"
+        class="modal fade"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered justify-content-center"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn close dismiss-btn btn-danger"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" class="btn btn-danger">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body p-0">
+              <div id="divshow">
+                <details>
+                  <summary>Niveau Technicien Spécialisé</summary>
+
+                  <h1 class="spntitle">Filières disponibles :</h1>
+                  <span class="">
+                    <div class="floating-stack">
+                      <dl>
+                        <dt>A</dt>
+                        <dd>Developpement Digital</dd>
+
+                        <dt>B</dt>
+                        <dd>Infrastructure Digital</dd>
+
+                        <dt>C</dt>
+                        <dd>Electromecanique des systemes automatisé</dd>
+
+                        <dt>D</dt>
+                        <dd>Gestion des Entreprises</dd>
+                      </dl>
+                    </div>
+                  </span>
+                </details>
+                <details>
+                  <summary>Niveau Technicien</summary>
+
+                  <h2>Filières disponibles :</h2>
+                  <div class="">
+                    <div class="floating-stack">
+                      <dl>
+                        <dt>A</dt>
+                        <dd>Réparation des Engins à Moteur</dd>
+
+                        <dt>B</dt>
+                        <dd>Froid Commercial et Climatisation</dd>
+
+                        <dt>C</dt>
+                        <dd>Electricité de Maintenance Industrielle</dd>
+
+                        <dt>D</dt>
+                        <dd>Secrétariat et Bureautique</dd>
+
+                        <dt>E</dt>
+                        <dd>Comptable d'Entreprises</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </details>
+                <details>
+                  <summary>Niveau Qualification</summary>
+
+                  <h2>Filières disponibles :</h2>
+                  <div class="">
+                    <div class="floating-stack">
+                      <dl>
+                        <dt>A</dt>
+                        <dd>Coupe et Couture</dd>
+
+                        <dt>B</dt>
+                        <dd>Menuiserie Aluminium,Bois</dd>
+
+                        <dt>C</dt>
+                        <dd>Agent de Restauration</dd>
+
+                        <dt>D</dt>
+                        <dd>Réparateur de Véhicules Automobiles</dd>
+
+                        <dt>E</dt>
+                        <dd>Monteur Dépanneur Frigoriste</dd>
+
+                        <dt>F</dt>
+                        <dd>Electricité d`Entretien Industriel</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </details>
+
+                <details>
+                  <summary>Niveau Specialisation</summary>
+
+                  <h2>Filières disponibles :</h2>
+                  <div class="">
+                    <div class="floating-stack">
+                      <dl>
+                        <dt>A</dt>
+                        <dd>Peintre Vitrier</dd>
+
+                        <dt>B</dt>
+                        <dd>Plomberie Sanitaire</dd>
+
+                        <dt>C</dt>
+                        <dd>Menuiserie Aluminium</dd>
+
+                        <dt>D</dt>
+                        <dd>Electricité de Bâtiment</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="js/main.js"></script>
-    <script src="js/audiomap.js"></script>
 
-    <script>
+    <!-- Modal 2 -->
+    <div
+      class="modal fade custom-modal"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="closeM2"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- <video
+              id="video1"
+              controls
+              class="video"
+              src="./images/ISTA.mp4"
+            ></video> -->
+            <iframe id="video1" class="video" src="https://www.youtube.com/embed/eWI_-D9Z6gc?si=bSQqFOSl55gca8NF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </script>
-</body>
+    <div class="">
+      <footer>
+  
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-md-3">
+                <div class="footer-site-info">2023 © <a href="https://anas-er25.github.io/DEVOWFS2024" target="_blank">DEVOWFS201</a></div>
+              </div>
+  
+              <div class="col-md-6">
+                <nav id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+                  <ul id="footer-menu" class="nav-menu styled clearfix inline-inside">
+                    
+                    <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#">Contact Us</a></li>
+                    
+                  </ul>
+                </nav>
+              </div>
+  
+              <div class="col-md-3">
+                <div id="footer-socials">
+                  <div class="socials inline-inside socials-colored">
+  
+                    <a href="#" target="_blank" title="Facebook" class="socials-item">
+                      <i class="fab fa-facebook-f facebook"></i>
+                    </a>
+                    
+                    <a href="#" target="_blank" title="Instagram" class="socials-item">
+                      <i class="fab fa-linkedin linkedin"></i>
+                    </a>
+                    <a href="#" target="_blank" title="YouTube" class="socials-item">
+                      <i class="fab fa-youtube youtube"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Telegram" class="socials-item">
+                      <i class="fab fa-telegram telegram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
 </html>
